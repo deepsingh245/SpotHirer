@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
     <div class="container">
-        <div class="navbar">
+        <div data-aos="fade-up" class="navbar">
           <div class="logo">
             <img src="./public/images/polygon-1.svg" />
             <a id="main-logo" href="index.html">SpotHirer</a>
@@ -28,8 +29,8 @@
         </div>
         <!-- Services -->
         <div class="fluid">
-        <div class="service">
-            <div class="search">
+        <div data-aos="fade-up" class="service">
+            <div  class="search">
                 <form id="search-form">
                     <div class="input-d">
                         <input type="text" id="location" placeholder="Location">
@@ -130,5 +131,11 @@
         </div>
     </div>
         <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 1000,
+          });
+        </script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="container">
@@ -27,11 +28,11 @@
       </div>
       <div class="main">
         <div class="content">
-          <div class="png-1-pics">
+          <div data-aos="fade-in" class="png-1-pics">
             <img src="./public/images/Other 02.png" />
           </div>
           <img id="logo-bk" src="./public/images/polygon-1.svg" />
-         <div class="tagline">
+         <div data-aos="fade-up" class="tagline">
             <h2>
                 Revolutionize Your Hiring Process Choose Our Go-To Online Solution
               </h2>
@@ -39,29 +40,29 @@
          </div>
         </div>
 
-        <div class="benefits">
+        <div data-aos="fade-in" class="benefits">
             <h1>Wellness and benefit</h1>
         </div>
         <div class="cards">
-            <div class="card">
+            <div data-aos="fade-right" class="card">
                 <h4>Comprehensive recruitment solution with custom job postings, resume search, and applicant tracking system.</h4>
                 <img src="./public/images/search.png">
             </div>
-            <div class="card">
+            <div data-aos="fade-left" class="card">
                 <img src="./public/images/phone.png">
                 <h4>Efficient workflow management and communication tools for recruiters and hiring managers.</h4>
             </div>
-            <div class="card">
+            <div data-aos="fade-right" class="card">
                 <h4>Robust analytics dashboard for data-driven recruitment decisions.</h4>
                 <img src="./public/images/dashboard.png">
             </div>
-            <div class="card">
+            <div data-aos="fade-left" class="card">
                 <img src="./public/images/stats.png">
                 <h4>Seamless integration with major HR software and third-party job boards.</h4>
             </div>
         </div>
 
-        <div class="testimonials">
+        <div data-aos="fade-in" class="testimonials">
             <h4>TESTIMONIALS</h4>
             <h1>What Our Customers Say</h1>
             <div class="t-cards">
@@ -145,5 +146,11 @@
           
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
