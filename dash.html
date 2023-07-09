@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./public/images/polygon-1.svg" />
+            <a id="main-logo" href="index.html">SpotHirer</a>
+          </div>
+          <ul>
+            <li><a href="dash.html">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+  
+          <div class="log">
+            <img src="./public/images/bxs-cart-alt.png" />
+            <a href="login.html"><button>Log in</button></a>
+          </div>
+        </div>
+        <!-- Services -->
+        <div class="fluid">
+        <div class="service">
+            <div class="search">
+                <form id="search-form">
+                    <div class="input-d">
+                        <input type="text" id="location" placeholder="Location">
+                      </div>
+                    
+                      <div class="input-d">
+                        <input type="text" id="job-role" placeholder="Job Role">
+                      </div>
+                      <button id="search" onclick="searchCandidates()" type="submit">
+                        Search
+                      </button>
+                    </form>
+                      <div class="list">
+                         <table  id="results-table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Location</th>
+                                <th>Role</th>
+                            </tr>
+                            <tbody id="results-body"></tbody>
+                            </table>
+                           
+                            
+                      </div>
+                    
+                </div>
+               
+                <div class="selected">
+                    <div class="selected-cand">
+                        <h4>Selected Candidates</h4>
+                    </div>
+                    <div class="list">
+                        <table id="saved-candidates-table">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Location</th>
+                                <th>Job Role</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody id="saved-candidates-body"></tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="footer">
+            <div class="footer-div">
+                <div class="logo">
+                    <img src="./public/images/polygon-1.svg" />
+                    <a id="footer-logo" href="index.html">SpotHirer</a>
+                  </div>
+                  <div class="pages">
+                    <ul>
+                        <li id="fir">Pages</li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                  </div>
+                  <div class="pages">
+                    <ul>
+                        <li id="fir">Privacy</li>
+                        <li><a href="#">Documentations</a></li>
+                        <li><a href="#">Policy</a></li>
+                        <li><a href="">Copy Rights</a></li>
+                    </ul>
+                  </div>
+                  <div class="pages">
+                    <ul>
+                        <li id="fir">Social</li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="rep-box">
+                    <div class="report-box">
+                        Report Problem
+                        <img src="./public/images/arrow.svg" alt="">
+                    </div>
+                    <div class="report-box">
+                        Contact Sales
+                        <img src="./public/images/arrow.svg" alt="">
+
+                    </div>
+                  </div>
+            </div>
+            <div class="foot">All the copyright reserved by SpotHirer 2023
+
+            </div>
+            
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
